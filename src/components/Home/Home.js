@@ -8,7 +8,7 @@ class Home extends React.Component {
     return (
       <div>
         <h1>Hello, I'm Tipytip</h1>
-        <button type='submit' onClick={this.handleTipping}>Get Started</button>
+        <button onClick={this.handleTipping}>Get Started</button>
       </div>
     );
   }
