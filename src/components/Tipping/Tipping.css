@@ -1,0 +1,8 @@
+.hidden {
+  display: none;
+}
+
+input {
+  display: block;
+  margin: auto;
+}
