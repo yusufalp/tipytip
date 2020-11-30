@@ -7,7 +7,7 @@ class Navbar extends React.Component {
       <div>
         <nav>
           <Link to='/'>Home</Link>
-          <Link to='/tipping'>Calculate</Link>
+          <Link to='/tipping'>Tip</Link>
         </nav>
       </div>
     );
