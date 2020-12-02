@@ -3,6 +3,10 @@
 }
 
 input {
+  width: 48px;
+  margin: 6px auto 18px;
+}
+
+label {
   display: block;
-  margin: auto;
 }
