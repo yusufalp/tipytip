@@ -1,5 +1,4 @@
 import React from 'react';
-import Result from '../Result/Result';
 import './Tipping.css';
 
 class Tipping extends React.Component {
@@ -72,7 +71,7 @@ class Tipping extends React.Component {
           </label>
           <p className={this.state.amountError ? '' : 'hidden'}>{this.state.amountError}</p>
           <label htmlFor='tip-percent'>
-            If you tip
+            If you tip 
           <input
               id='tip-percent'
               type='number'
@@ -81,10 +80,10 @@ class Tipping extends React.Component {
               max='100'
               onChange={e => this.handleTipPercentChange(e.target.value)}
               required
-            /> %, your tip will be {Math.floor(this.state.amount * this.state.percent) / 100}
+            /> %, your tip will be ${Math.floor(this.state.amount * this.state.percent) / 100}
           </label>
           <label htmlFor='tip-amount'>
-            If you tip
+            If you tip $
           <input
               id='tip-amount'
               type='number'
@@ -93,7 +92,7 @@ class Tipping extends React.Component {
               step='.01'
               onChange={e => this.handleTipAmountChange(e.target.value)}
               required
-            /> $, that is {(Math.floor(this.state.tip / this.state.amount * 10000)) / 100}% of your bill
+            /> , that is {(Math.floor(this.state.tip / this.state.amount * 10000)) / 100}% of your bill
           </label>
           <p className={this.state.percentError ? '' : 'hidden'}>{this.state.percentError}</p>
         </form>
