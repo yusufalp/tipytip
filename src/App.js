@@ -2,24 +2,28 @@ import React from 'react';
 import './App.css';
 import Home from './components/Home/Home';
 import Tipping from './components/Tipping/Tipping';
-import Navbar from './components/Navbar/Navbar';
-import { Route, Switch } from 'react-router-dom'
 
 class App extends React.Component {
+  state = {
+    isStarted: false
+  }
+  handleStart = () => {
+    this.setState({
+      isStarted: true
+    })
+  }
+  handleReset = () => {
+    this.setState({
+      isStarted: false
+    })
+  }
   render() {
     return (
       <div className="App">
-        <Navbar />
-        <Switch>
-          <Route
-            exact path='/'
-            component={Home}
-          />
-          <Route
-            path='/tipping'
-            component={Tipping}
-          />
-        </Switch>
+        <Home start={this.handleStart} isStarted={this.state.isStarted}/>
+        <div className={this.state.isStarted ? '' : 'hidden'}>
+          <Tipping reset={this.handleReset} />
+        </div>
       </div>
     );
   }
