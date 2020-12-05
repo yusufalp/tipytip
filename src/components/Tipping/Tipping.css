@@ -1,10 +1,7 @@
-.hidden {
-  display: none;
-}
-
 input {
-  width: 48px;
+  width: 60px;
   margin: 6px auto 18px;
+  text-align: center;
 }
 
 label {
