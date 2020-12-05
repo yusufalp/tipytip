@@ -1,9 +1,9 @@
 # Tipytip
 
 You have seen so many app that calculates tips for you. This one 
-adds one more step and calculates what percentage was your tip was. 
+adds one more step and calculates what percentage your tip was. 
 
-Example: Let's say you usually pay 15% tip and todays cost was $60. That means 
+Example: Let's say you usually pay 15% tip and today's cost was $60. That means 
 you will pay $9 in tips. But you decided that you do not have much time to calculate 
 and wanted to just give them $10. Later on that night, you wonder how much percentage 
 did you tip. Now you can just calculate that.
@@ -32,4 +32,4 @@ If you discover any bugs, feel free to create an issue on GitHub. Please add as 
 possible to help us in fixing the potential bug. We also encourage you to help even more by forking and
 sending us a pull request.
 
-https://github.com/yusufalp/t-400/issues
+https://github.com/yusufalp/tipytip/issues
