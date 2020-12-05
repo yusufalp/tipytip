@@ -58,7 +58,7 @@ class Tipping extends React.Component {
         <h1>Tip</h1>
         <form>
           <label htmlFor='amount'>
-            Amount
+            Amount: 
           <input
               id='amount'
               type='number'
@@ -95,6 +95,7 @@ class Tipping extends React.Component {
             /> , that is {(Math.floor(this.state.tip / this.state.amount * 10000)) / 100}% of your bill
           </label>
           <p className={this.state.percentError ? '' : 'hidden'}>{this.state.percentError}</p>
+          <button onClick={this.props.reset}>Start Over</button>
         </form>
       </div>
     );
